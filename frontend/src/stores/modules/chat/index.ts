@@ -25,19 +25,19 @@ export const useChatStore = defineStore(
     const sydneyConfigs = ref<SydneyConfig[]>([
       {
         baseUrl: 'https://sydney.bing.com',
-        label: 'Bing 官方',
+        label: '官方直连',
       },
       {
-        baseUrl: 'https://sydney.vcanbb.chat',
-        label: 'Cloudflare',
+        baseUrl: 'https://bingproxy.ai-gpt.uk',
+        label: '旁路连接',
       },
       {
         baseUrl: location.origin,
-        label: '本站',
+        label: '本站自连',
       },
       {
         baseUrl: '',
-        label: '自定义',
+        label: '自定旁路',
         isCus: true,
       },
     ]);
